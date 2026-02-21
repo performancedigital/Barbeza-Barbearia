@@ -1,0 +1,7 @@
+{
+  "name": "Barbeza Barbearia - Experiência de Autocuidado",
+  "description": "Uma landing page institucional de alta conversão para a Barbeza Barbearia, focada em sofisticação, natureza e bem-estar masculino.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-barbeza-olive: #9A936A;
+  --color-barbeza-gold: #B89C66;
+  --color-barbeza-beige: #F5F5F2;
+  --color-barbeza-dark: #1C1C1A;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Montserrat", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-barbeza-beige text-barbeza-dark font-sans;
+  }
+  
+  h1, h2, h3, h4, .font-serif {
+    @apply font-serif;
+  }
+}
+
+@keyframes slowZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+.animate-slow-zoom {
+  animation: slowZoom 20s infinite alternate ease-in-out;
+}
+
+.ritual-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-barbeza-gold), transparent);
+}
